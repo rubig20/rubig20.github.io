@@ -1,0 +1,55 @@
+$color-principal: #0d1b2a;
+$color-secundario: #1b263b;
+$color-texto: #e0e1dd;
+$color-acento: #ff6b6b;
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: $color-principal;
+  color: $color-texto;
+}
+
+header {
+  background-color: $color-secundario;
+  padding: 10px;
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+
+    li a {
+      color: $color-texto;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-acento;
+      }
+    }
+  }
+}
+
+.contenido {
+  padding: 20px;
+
+  .imagenes, .videos {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+
+    img, video {
+      max-width: 30%;
+      border-radius: 10px;
+    }
+  }
+}
+
+footer {
+  background-color: $color-secundario;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
